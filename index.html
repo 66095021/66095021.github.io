@@ -85,7 +85,7 @@
         
   
     <h1 itemprop="name">
-      <a class="p-name article-title" href="/2022/05/15/rust/">rust</a>
+      <a class="p-name article-title" href="/2022/05/15/rust/">rust from c programmer</a>
     </h1>
   
 
@@ -113,11 +113,18 @@
 <p>enum Data<br>{<br>Empty,<br>Number(i32),<br>Array(Vec<i32>)<br>};</p>
 <p>memory layout<br>Empty: integer tag 0|padding<br>Number: integer tag 1|padding| i32|padding<br>Array:  interge tag 2|padding|fat pointer|</p>
 <p>Option enum:<br>pub enum Option<T><br>{<br>None,<br>Some(T),<br>}<br>None 0 | padding<br>Some 1 | sizeof(T)</p>
+<p>Trait:</p>
+<p>trait object two pointers.  one for value who impl trait. one for the value type (VTABLE).  VTABLE is generated at<br>compile time, which shared by all objects of the same type.</p>
+<p>let mut buffer &#x3D;vec![1,2,3];<br>let w :&amp;nut dyn Write &#x3D; &amp; mut buffer;</p>
+<p>fn writer(x: &amp;mut dyn Write){}</p>
+<p>Function pointer:<br>just pointer to code address.<br>let f: fn()-&gt;bool &#x3D; test_func;<br>fn test_func() -&gt; bool<br>{</p>
+<p>}</p>
+<p>rust async&#x2F;await</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/05/15/rust/" data-id="cl36mbnuy0000k8uehvezbu85" data-title="rust" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2022/05/15/rust/" data-id="cl36mbnuy0000k8uehvezbu85" data-title="rust from c programmer" class="article-share-link">Share</a>
       
       
       
@@ -250,7 +257,7 @@
       <ul>
         
           <li>
-            <a href="/2022/05/15/rust/">rust</a>
+            <a href="/2022/05/15/rust/">rust from c programmer</a>
           </li>
         
           <li>
